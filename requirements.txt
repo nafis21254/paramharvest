@@ -1,0 +1,14 @@
+# ParamHarvest Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core proxy engine
+mitmproxy>=10.0.0
+
+# Terminal colors
+colorama>=0.4.6
+
+# Optional: Enhanced JSON handling
+# ujson>=5.8.0
+
+# Optional: For advanced pattern matching
+# regex>=2023.0.0
