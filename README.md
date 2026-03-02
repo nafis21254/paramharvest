@@ -1,4 +1,4 @@
-# ParamHarvest 🎯
+# ParamHarvest
 
 **Automated Parameter Discovery & Logging Engine**
 
@@ -10,16 +10,16 @@ A powerful mitmproxy-based interception tool designed for security researchers, 
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Multi-Source Extraction**: Captures parameters from URL query strings (GET), form data (POST), JSON bodies (nested), and multipart uploads
 - **Smart Deduplication**: Hash-based deduplication ensures each unique parameter is logged only once, even if encountered thousands of times
 - **Risk Classification**: Automatically tags parameters based on potential vulnerability categories:
-  - 🔴 **IDOR**: `id`, `user_id`, `account`, `uuid`
-  - 🟣 **LFI/RFI**: `file`, `path`, `url`, `redirect`
-  - 🟡 **Command Injection**: `cmd`, `exec`, `query`
-  - 🔵 **SQLi**: `select`, `where`, `order_by`
-  - 🟢 **XSS**: `q`, `search`, `callback`
+  - **IDOR**: `id`, `user_id`, `account`, `uuid`
+  - **LFI/RFI**: `file`, `path`, `url`, `redirect`
+  - **Command Injection**: `cmd`, `exec`, `query`
+  - **SQLi**: `select`, `where`, `order_by`
+  - **XSS**: `q`, `search`, `callback`
 - **Live Reflection Detection**: Optional real-time checking for parameter reflection in responses (potential XSS/SSTI)
 - **Dual Output Formats**:
   - `raw_params.json`: Structured data for integration with other tools
@@ -27,7 +27,7 @@ A powerful mitmproxy-based interception tool designed for security researchers, 
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Quick Start](#-quick-start)
 - [Installation](#-installation)
@@ -42,7 +42,7 @@ A powerful mitmproxy-based interception tool designed for security researchers, 
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 # 1. Clone and install
@@ -63,7 +63,7 @@ mitmdump -s paramharvest.py
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -92,7 +92,7 @@ mitmdump --version
 
 ---
 
-## 🔐 Certificate Setup
+## Certificate Setup
 
 ParamHarvest needs to intercept HTTPS traffic, which requires installing a trusted CA certificate.
 
@@ -129,7 +129,7 @@ ParamHarvest needs to intercept HTTPS traffic, which requires installing a trust
 
 ---
 
-## 🎮 Usage
+## Usage
 
 ### Basic Usage
 
@@ -185,7 +185,7 @@ $env:https_proxy = "http://127.0.0.1:8080"
 
 ---
 
-## 📊 Output Formats
+## Output Formats
 
 ### raw_params.json
 
@@ -246,7 +246,7 @@ path
 
 ---
 
-## 🔗 Integration with Fuzzing Tools
+## Integration with Fuzzing Tools
 
 ### ffuf
 
@@ -303,7 +303,7 @@ for p in idor_params:
 
 ---
 
-## 🔄 Daemon Mode
+## Daemon Mode
 
 Run ParamHarvest as a background service:
 
@@ -365,7 +365,7 @@ sudo systemctl start paramharvest
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Risk Pattern Customization
 
@@ -393,9 +393,9 @@ The tool automatically handles:
 
 ---
 
-## 🛡️ Security Disclaimer
+## Security Disclaimer
 
-> ⚠️ **IMPORTANT: This tool is intended for authorized security testing only.**
+> **IMPORTANT: This tool is intended for authorized security testing only.**
 
 - **Always obtain explicit written permission** before testing any systems you don't own
 - **Bug bounty programs**: Ensure the target is in scope before testing
@@ -429,7 +429,7 @@ paramharvest/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 
@@ -441,13 +441,13 @@ Contributions are welcome! Please:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [mitmproxy](https://mitmproxy.org/) - The powerful interactive HTTPS proxy
 - [colorama](https://github.com/tartley/colorama) - Cross-platform colored terminal text
@@ -455,4 +455,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Happy Hunting! 🎯**
+
